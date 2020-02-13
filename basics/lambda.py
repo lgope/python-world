@@ -3,11 +3,14 @@ add = lambda a : a + 10
 
 print(add(5))
 
+sum = lambda a, b, c = 4 : print(f'{a} + {b} + {c} = {a + b + c}')
+
+sum(4, 5, 5)
 
 # multiply
 multiply = lambda a, b : a * b
 
-print(multiply(5, 6))
+print(f'multiply of 5 and 6 =  {multiply(5, 6)}')
 
 
 # Lambda Functions
