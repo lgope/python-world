@@ -16,14 +16,14 @@
 # print(type(6 % 4))
 
 print(7 / 4)  # 1.75
-print(7 // 4) # 1
+print(7 // 4)  # 1
 
 # bin()
-print(bin(5)) # binary of 5 0b101
-print(int('0b101', 2)) # binary to int '5'
+print(bin(5))  # binary of 5 0b101
+print(int('0b101', 2))  # binary to int '5'
 
-
-# The built-in Python function id() returns an object’s integer identifier. Using the id() function, you can verify that two variables indeed point to the same object
+# The built-in Python function id() returns an object’s integer identifier. Using the id() function,
+# you can verify that two variables indeed point to the same object
 
 
 m = n = 88
@@ -40,28 +40,25 @@ print(type(strvalue))
 complexValue = 1j
 print(type(complexValue))
 
-
 # list
 listValue = ["apple", "mango", "cherry"]
 print(type(listValue))
 
 # tuple
-tupleValue =("apple", "mango", "cherry")
+tupleValue = ("apple", "mango", "cherry")
 print(type(tupleValue))
 
 # dict
-dictValue = {"name" : "Lakshman", "age" : 20}
+dictValue = {"name": "Lakshman", "age": 20}
 print(type(dictValue))
 
 # set
 setValue = {"apple", "mango", "cherry"}
 print(type(setValue))
 
-
 # bytes
 bytesValue = b"Hello World"
 print(type(bytesValue))
-
 
 # bool
 boolValue = True
