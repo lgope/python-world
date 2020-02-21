@@ -12,8 +12,8 @@ def start_game():
             break
         else:
             print(f"Nope! It was {correct_answer}")
-            play_again = input('Try again. 1/0: ')
-            if int(play_again) == 0:
+            play_again = int(input('Try again. 1/0: '))
+            if play_again == 0:
                 break
 
 
