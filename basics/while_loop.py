@@ -12,3 +12,11 @@ while True:  # Will keep looping until it encounters a break
     y += 1
     if y == 10:
         break
+
+i = 0
+while i < 10:
+    print(i)
+    i += 1
+    # break
+else:
+    print('Done with all the work!')
