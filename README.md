@@ -4,14 +4,16 @@ All about python. The goal of this repo is to save my all python code. 🙂👨�
 ### Table of Contents
 | No. | Contents |
 | --- | --------- |
-|1  | [Variables](####variables) |
-|2  | [Data Types](####aata-types) |
-|3  | [Bool](####bool) |
-|4  | [If Else](####if-else) |
-|5  | [For Loop](####for-loop) |
-|6  | [Function](####function) |
-|7  | [Prime Number](####prime-number) |
-|8  | [Palindrome](####palindrome) |
+|1  | [Variables](#variables) |
+|2  | [Data Types](#data-types) |
+|3  | [Bool](#bool) |
+|4  | [If Else](#if-else) |
+|5  | [For Loop](#for-loop) |
+|6  | [Function](#function) |
+|7  | [Lambda](#lambda) |
+|8  | [String Methods](#string-methods) |
+|9  | [Prime Number](#prime-number) |
+|10 | [Palindrome](#palindrome) |
 
 #### Variables
 ```python
@@ -242,6 +244,76 @@ def say_hello(name, capitalize=False):
 
 print(say_hello('lakshman'))
 print(say_hello('lakshman', True))
+```
+
+**[⬆ Back to Top](#Python-World)**
+
+#### Lambda
+```python
+# add
+add = lambda a: a + 10
+
+print(add(5))
+
+sum = lambda a, b, c=4: print(f'{a} + {b} + {c} = {a + b + c}')
+
+sum(4, 5, 5)
+
+# multiply
+multiply = lambda a, b: a * b
+
+print(f'multiply of 5 and 6 =  {multiply(5, 6)}')
+
+
+# Lambda Functions
+def myfunc(n):
+    return lambda a: a * n
+
+
+mydoubler = myfunc(2)
+anotherdoubler = myfunc(4)
+
+print(mydoubler(11))
+print(anotherdoubler(4))
+
+# Python lambda demo to use map() for adding elements of two lists
+
+alist = ['learning', 'python', 'step', 'by', 'step']
+
+output = list(map(lambda x: x.upper(), alist))
+
+# Output: ['LEARN', 'PYTHON', 'STEP', 'BY', 'STEP']
+print(output)
+
+# Python lambda demo to filter out vowles from a list
+
+alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+vowels = ['a', 'e', 'i', 'o', 'u']
+
+output = list(filter(lambda x: (x in vowels), alphabets))
+
+# Output: ['a', 'e', 'i']
+print(output)
+```
+
+**[⬆ Back to Top](#Python-World)**
+
+#### String Methods
+```python
+string = 'Hello world from python'
+
+print(string.upper())
+print(string.lower())
+print(string.title())
+
+print(string[0:4])
+print(string[5:])
+print(string[::2])
+print(string[::-1])
+
+string_list = string.split()
+print(string_list)
+print('*'.join(string_list))
 ```
 
 **[⬆ Back to Top](#Python-World)**
